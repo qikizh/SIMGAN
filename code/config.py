@@ -11,7 +11,7 @@ cfg = __C
 # Dataset name: flowers, birds
 __C.DATASET_NAME = 'birds'
 # __C.CONFIG_NAME = ''
-__C.DATA_DIR = '../../data/birds'
+__C.DATA_DIR = '../data/birds'
 __C.GPU_ID = '0'
 __C.CUDA = True
 __C.RNN_TYPE = 'LSTM'   # 'GRU'
