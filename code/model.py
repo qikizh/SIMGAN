@@ -188,7 +188,7 @@ class RNN_CA(nn.Module):
 
 class ModificationGen(nn.Module):
 
-    def __init__(self, ngf=64, num_residual=2, emb_dim=cfg.TRAIN.Z_DIM, feat_dim1=128, feat_dim2=64):
+    def __init__(self, ngf=32, num_residual=2, emb_dim=cfg.TRAIN.Z_DIM, feat_dim1=128, feat_dim2=64):
         super().__init__()
 
         self.ngf = ngf
