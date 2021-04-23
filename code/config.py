@@ -52,7 +52,7 @@ __C.TEXT.NET_G = ""
 # Modal options
 __C.GAN = edict()
 __C.GAN.DF_DIM = 64
-__C.GAN.GF_DIM = 64
+__C.GAN.GF_DIM = 32
 __C.GAN.Z_DIM = 100
 __C.GAN.NETWORK_TYPE = 'default'
 __C.GAN.R_NUM = 2
