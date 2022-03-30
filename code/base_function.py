@@ -23,7 +23,7 @@ def Up_unet(in_c, out_c):
     return nn.Sequential(nn.ConvTranspose2d(in_c, out_c*2, 4, 2, 1), nn.BatchNorm2d(out_c*2), GLU())
 
 
-def BottleNeck(in_c, out_c):
+def BottleNeck(in_c, out_c): # 瓶颈层
     return nn.Sequential(nn.Conv2d(in_c, out_c*2, 4, 4), nn.BatchNorm2d(out_c*2), GLU())
 
 
