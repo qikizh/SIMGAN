@@ -1,0 +1,29 @@
+CONFIG_NAME: 'bird_sota'
+DATASET_NAME: 'bird'
+DATA_DIR: '../data/birds/'
+SAVE_DIR: '../data/EE_GAN_OUT'
+WORKERS: 4
+
+TREE:
+    BRANCH_NUM: 4
+    BASE_SIZE: 64
+
+TRAIN:
+    BATCH_SIZE: 32  # 24
+    CLASS_NUM: 200 # bird
+    USE_ATTR: True
+    MAX_EPOCH: 650
+    NET_G: ''
+    WARMUP_EPOCHS: 550
+    GSAVE_INTERVAL: 10
+    DSAVE_INTERVAL: 50
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 10
+    DAMSM_NAME: '../data/Models/AttnGAN/text_encoder200.pth'
+    SIM_DAMSM_NAME: '../data/Models/bird_DAMSM/all/text_encoder290.pth'
+
+GAN:
+    GF_DIM: 64
+    DF_DIM: 32
