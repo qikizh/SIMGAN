@@ -15,10 +15,12 @@ from torchvision import models
 import torch.utils.model_zoo as model_zoo
 import torch.nn.functional as F
 
+
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 from miscc.config import cfg
 
+print("hello")
 
 def conv1x1(in_planes, out_planes, bias=False):
     "1x1 convolution with padding"
